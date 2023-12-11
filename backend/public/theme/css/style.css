@@ -1,0 +1,139 @@
+/********** Template CSS **********/
+:root {
+    --primary: #44b9cb;
+    --secondary: #B2E364;
+    --light: #b4e3ea;
+    --dark: #1C2035;
+    --bg-light: #edeff6;
+}
+
+body {
+    font-size: 1.20rem;
+    font-family: Inter, Arial, sans-serif;
+}
+
+.bg-green {
+    background: #B2E364;
+}
+
+.bg-lighted {
+    background: #e7f8fb;
+}
+
+.bg-light-blue {
+    background: #b4e3ea;
+}
+
+.bg-green {
+    background: #B2E364;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-sm {
+    border-radius: 5px;
+}
+
+.grey-400 {
+    color: #9ca3af;
+}
+
+.grey-300 {
+    color: #f9fafb;
+}
+
+.bg-grey-300 {
+    background: var(--bg-light);
+}
+
+.grey-500 {
+    color: #6b7280;
+}
+
+.bg-grey-400 {
+    background-color: #9ca3af;
+}
+
+.bg-grey-500 {
+    background-color: #9ca3af;
+}
+
+.img > img {
+    width: 90%;
+    max-height: 600px;
+}
+
+.border-radius {
+    border-radius: 1rem !important;
+}
+
+.text-sm {
+    font-size: 1rem;
+}
+
+.badge {
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.circle-lg {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 18px !important;
+    line-height: 30px !important;
+}
+
+.active {
+    background: var(--primary) !important;
+    color: #fff !important;
+}
+
+.box {
+    margin-right: .5rem;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #f9fafb;
+    border-radius: 8px;
+}
+
+.circle {
+    margin-right: .5rem;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #f9fafb;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background: var(--bg-light);
+    color: #9ca3af;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.sub-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+}

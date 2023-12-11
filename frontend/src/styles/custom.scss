@@ -1,0 +1,100 @@
+body{
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h2{
+    font-weight: 500;
+}
+.card-login{
+    @apply w-full mb-8 text-left border-none shadow-none;
+
+    h1{
+        @apply text-xl font-semibold text-gray-900 mb-4;
+    }
+
+    @screen md{
+        @apply w-[400px];
+    }
+}
+.hideSidebar{
+    left: -100%;
+}
+.container-inner-centered{
+    @apply max-w-[460px];
+}
+.search-client-block{
+    svg:not(.iconplus){
+        @apply text-gray-400;
+    }
+}
+.selected-client-block{
+    svg:not(.iconplus){
+        @apply text-gray-900;
+    }
+}
+
+.clients-results{
+    li{
+        &:last-child{
+            @apply mb-0;
+        }
+    }
+}
+.screen-bottom-actions{
+    .button-action{
+        @apply min-w-[120px] text-sm;
+        span{
+            @apply text-sm;
+        }
+    }
+}
+.client_pets_list{
+    input[type="radio"]{
+        @apply text-gray-900;
+    }
+}
+.avatar-client-info{
+    .rounded-full{
+        @apply bg-teal-100;
+    }
+}
+.avatar-user-info{
+    .rounded-full{
+        @apply bg-gray-100;
+    }
+}
+.card-default{
+    @apply border border-gray-200 rounded-lg px-4 py-5 pb-7;
+}
+.card-custom-default{
+    @apply border border-gray-200 rounded-lg px-4 py-5 pb-5;
+}
+.label-form{
+    @apply font-medium text-base text-gray-900;
+}
+.select-option{
+    @apply font-medium text-base text-gray-500;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.first-letter-uppercase::first-letter {
+    @apply uppercase;
+}
+.custom-list {
+    border: none!important;
+}
+.scrollbar-style::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.scrollbar-style::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 3px;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
